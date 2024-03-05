@@ -9,6 +9,7 @@ import GitHubIcon from "../components/icons/GitHub.astro"
 import EmailIcon from "../components/icons/Email.astro"
 import Work from "../components/icons/Work.astro"
 import TargetProyecto from "../components/TargetProyecto.astro"
+import NavProyectos from "../components/NavProyectos.astro"
 ---
 
 <Layout title="Porfolio de Marcos Guerrero - Desarrollador y Programador Web">
@@ -16,7 +17,7 @@ import TargetProyecto from "../components/TargetProyecto.astro"
 		
 		<section id="info" class=" w-full lg:w-[740px] mx-auto pt-16">
 				<h1 class="text-5xl font-bold flex justify-between items-center gap-x-4 pb-4">
-					Hey, soy Marcos <a class="flex items-center" href="https://www.linkedin.com/in/marcos-guerrero45"><Badge>Disponible para trabajar</Badge></a>
+					Hey, soy Marcos <a class="flex items-center" href="https://www.linkedin.com/in/marcos-guerrero45" target="_blank"><Badge>Disponible para trabajar</Badge></a>
 				</h1>
 				<h2 class="text-2xl text-wrap opacity-80">
 					tata años de experiencia. Como desarrollador Web. De Mendoza Argentina "bandera argentina". Especializado en crear aplicaciones únicas.
@@ -31,9 +32,9 @@ import TargetProyecto from "../components/TargetProyecto.astro"
 						<GitHubIcon class="w-6 h-6"/> 
 						GitHub
 					</SocialPill>
-					<SocialPill href="https://github.com/Picuruz45">
+					<SocialPill href="mailto:marcos.45874@gmail.com">
 						<EmailIcon class="w-6 h-6"/> 
-						GitHub
+						marcos.45874@gmail.com
 					</SocialPill>
 				</nav>
 		</section>
@@ -48,24 +49,7 @@ import TargetProyecto from "../components/TargetProyecto.astro"
 
 		<section id="proyectos" class="flex flex-col pb-60 w-[900px]">
 			<h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">Proyectos</h2>
-			<div class="flex flex-col gap-6">
-				<TargetProyecto 
-					nombre="Node + React + Express"
-					descripcion="Administrador de pacientes para Veterinaria, crea sitas y guardalas en una base de datos para su modificacion o eliminacion."
-					img="test.png"
-					linkPagina="https://google.com" 
-				/>
-				<TargetProyecto 
-					nombre="Youtube"
-					descripcion="Administrador de pacientes para Veterinaria, crea sitas y guardalas en una base de datos para su modificacion o eliminacion."
-					img="test2.png"
-					linkPagina="https://youtube.com" 
-				/>
-			</div>
+			<NavProyectos />
 		</section>
 	</main>
 </Layout>
-
-<style>
-	
-</style>
